@@ -1,5 +1,5 @@
 # gulp-hogan [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
-> gulp plugin to convert XML to JSON.
+> gulp plugin to compile hogan templates.
 
 ## Usage
 
