@@ -1,4 +1,4 @@
-# gulp-hogan [![NPM version][npm-image]][npm-url] [![Build status][travis-image]][travis-url]
+# gulp-hogan [![Build status][travis-image]][travis-url]
 > gulp plugin to compile hogan templates.
 
 ## Usage
@@ -29,7 +29,6 @@ gulp.task('default', function(){
 Now dist will have `template.js` with content as `Follow @gnumanth`
 
 [travis-url]: http://travis-ci.org/hemanth/gulp-hogan
-[travis-image]: https://secure.travis-ci.org/lazd/gulp-hogan.png?branch=master
-[npm-url]: https://npmjs.org/package/gulp-hogan
-[npm-image]: https://badge.fury.io/js/gulp-repl.png
+[travis-image]: https://travis-ci.org/hemanth/gulp-hogan.svg
+
 
