@@ -3,7 +3,7 @@ var assert = require('assert');
 var gutil = require('gulp-util');
 var hogan = require('./index');
 
-it('should compile Markdown to HTML', function (cb) {
+it('should compile hogan to js', function (cb) {
         var stream = hogan({handle: 'gnumanth'});
 
         stream.on('data', function (file) {
