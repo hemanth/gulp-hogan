@@ -21,7 +21,7 @@ Follow @{{handle}}.
 var hogan = require('gulp-hogan');
 
 gulp.task('default', function(){
-  gulp.src('index.html')
+  gulp.src('template.hogan')
     .pipe(hogan({handle: 'gnumanth'}))
     .pipe(gulp.dest('dist'));
 });
