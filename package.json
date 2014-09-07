@@ -1,6 +1,6 @@
 {
   "name": "gulp-hogan",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "gulp plugin to compile mustache templates",
   "main": "index.js",
   "scripts": {
@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/hemanth/gulp-hogan",
   "dependencies": {
-    "gulp-util": "~2.2.5",
-    "event-stream": "~3.0.20",
-    "map-stream": "0.0.4",
-    "hogan.js": "~2.0.0"
+    "gulp-util": "^3.0.1",
+    "event-stream": "^3.1.7",
+    "map-stream": "^0.1.0",
+    "hogan.js": "^3.0.1"
   },
   "devDependencies": {
-      "mocha": "*"
+    "mocha": "*"
   }
 }
