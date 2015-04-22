@@ -1,6 +1,6 @@
 {
   "name": "gulp-hogan",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "gulp plugin to compile mustache templates",
   "main": "index.js",
   "scripts": {
