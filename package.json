@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/hemanth/gulp-hogan",
   "dependencies": {
-    "gulp-util": "^3.0.1",
-    "event-stream": "^3.1.7",
-    "map-stream": "^0.0.5",
-    "hogan.js": "^3.0.2"
+    "gulp-util": "3.0.6",
+    "event-stream": "3.3.1",
+    "map-stream": "0.0.5",
+    "hogan.js": "3.0.2"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "2.3.3"
   }
 }
