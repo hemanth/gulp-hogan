@@ -39,26 +39,23 @@ Folder structure
 
 ```
 |-- templates
-    |-- page1.hogan
-    |-- page2.hogan
+    |-- page.hogan
+    |-- body.hogan
     |-- partials
     |   |-- header.hogan
     |   |-- footer.hogan
 ```
 
-page1.hogan
-
+page.hogan
 ```html
-<h1>Page 1</h1>
-{{> header }}
-{{> footer }}
+<h1>Page</h1>
+{{> body }}
 ```
 
-page2.hogan
+body.hogan
 ```html
-<h1>Page 2</h1>
-{{> header }}
-{{> footer }}
+{{> partials/header }}
+{{> partials/footer }}
 ```
 
 header.hogan
@@ -81,28 +78,16 @@ gulpfile.js
 var hogan = require('gulp-hogan');
 
 gulp.task('default', function(){
-  gulp.src('template/*.hogan', {}, '.html')
-    .pipe(hogan({year: '2016', section: true}, null, '.html'))
+  gulp.src('template/page.hogan', {}, '.html')
+    .pipe(hogan({year: '2016'}, null, '.html'))
     .pipe(gulp.dest('dist'));
 });
 ```
 
-dist/page1.html
+dist/page.html
 
 ```html
-<h1>Page 1</h1>
-<header>
-    Logo <img>
-</header>
-<footer>
-    Copyright 2016
-</footer>
-```
-
-dist/page2.html
-
-```html
-<h1>Page 2</h1>
+<h1>Page</h1>
 <header>
     Logo <img>
 </header>
