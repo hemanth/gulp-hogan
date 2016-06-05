@@ -1,16 +1,16 @@
 'use strict';
-const es = require('event-stream');;
-const gutil = require('gulp-util');
-const Hogan = require('hogan.js');
-const path = require('path');
-const fs = require('fs');
+var es = require('event-stream');
+var gutil = require('gulp-util');
+var Hogan = require('hogan.js');
+var path = require('path');
+var fs = require('fs');
 
 module.exports = function(data, options, extension) {
   data = data || {};
   extension = extension || '.js';
   return es.map(function (file, cb) {
-    const compiled = Hogan.compile(file.contents.toString(), options);
-    const partialTemplates = getPartials(compiled, path.dirname(file.path), path.extname(file.path), data, options);
+    var compiled = Hogan.compile(file.contents.toString(), options);
+    var partialTemplates = getPartials(compiled, path.dirname(file.path), path.extname(file.path), data, options);
     
     file.contents = new Buffer( compiled.render(data, partialTemplates) );
     file.path = gutil.replaceExtension(file.path, extension);
@@ -19,13 +19,13 @@ module.exports = function(data, options, extension) {
 };
 
 
-const getPartials = (compiled, dir, ext, data, options) => {
-    let currentPartials = {},
+function getPartials(compiled, dir, ext, data, options) {
+    var currentPartials = {},
         partialTemplates = {},
         partialPath = '',
         compiledPartial;
     
-    Object.keys(compiled.partials).forEach((tag) => {
+    Object.keys(compiled.partials).forEach(function (tag) {
         // find the path of the partial
         partialPath = path.format({
             'dir': dir,
