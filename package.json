@@ -28,6 +28,6 @@
     "hogan.js": "^3.0.2"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "2.5.0"
   }
 }
